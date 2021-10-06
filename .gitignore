@@ -1,2 +1,5 @@
 # webstorm
 .idea/
+
+# react native
+node_modules
