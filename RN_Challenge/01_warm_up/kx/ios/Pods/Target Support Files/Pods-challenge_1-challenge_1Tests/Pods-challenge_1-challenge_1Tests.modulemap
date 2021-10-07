@@ -1,6 +1,0 @@
-module Pods_challenge_1_challenge_1Tests {
-  umbrella header "Pods-challenge_1-challenge_1Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
