@@ -7,15 +7,19 @@ export type TextInputProps = ComponentProps<typeof RNTextInput>;
 export const TextInput:React.FC<TextInputProps> = ({style, ...props}) => {
   return (
     <RNTextInput
+      autoCapitalize="none"
+      autoCorrect={false}
       style={[styles.textInput, style]}
-      placeholderTextColor="#ccc"
+      placeholderTextColor="#9e9e9e"
       {...props}
     />
   )
 };
 const styles = StyleSheet.create({
   textInput: {
+    fontSize: 14,
     borderBottomWidth: 1,
-    paddingVertical: 6
+    paddingHorizontal: 6,
+    paddingVertical: 7
   }
 });

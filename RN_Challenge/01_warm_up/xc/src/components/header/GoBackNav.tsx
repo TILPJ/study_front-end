@@ -1,8 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import {Container} from '../container';
-
 interface GoBackNavProps {
   onPressBack: () => void;
   label?: string;
@@ -27,16 +25,16 @@ export const GoBackNav = ({label, onPressBack}: GoBackNavProps) => {
 
 const styles = StyleSheet.create({
   arrowIcon: {
-    width: 24,
-    height: 24,
+    width: 20,
+    height: 20,
     resizeMode: 'contain',
   },
   backButton: {
   },
   label: {
-    marginLeft: 20,
+    marginLeft: 8,
     color: '#000',
-    fontSize: 20,
+    fontSize: 16,
   },
   view: {
     flexDirection: 'row',
